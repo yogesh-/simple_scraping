@@ -1,0 +1,10 @@
+This is simple few lines of code to scrape a website and get the data as it is desired.
+
+Inspiration from :- https://www.youtube.com/user/CodingEntrepreneurs // Justin Mitchel.
+
+Things to add:-
+  1. export data to csv
+  2. currently only single page is being scraped but do if for the next 10 pages for same search
+  
+  
+Anything to add more guys ?
