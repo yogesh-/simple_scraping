@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import csv
 
 url = "http://www.yellowpages.com/search?search_terms=coffe&geo_location_terms=Los+Angeles%2C+CA"
 r = requests.get(url)
@@ -34,4 +35,10 @@ for item in g_data:
 		print item.contents[1].find_all("li", {"class":"primary"})[0].text
 	except:
 		pass
-	
+
+def exim ():
+	c = csv.writer(open('data.csv','wb'))
+	for i in g_data:
+		c.writerow(['business-name','streetAddress','addressLocality','addressRegion','postalCode'])
+
+exim()
